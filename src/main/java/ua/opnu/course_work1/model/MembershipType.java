@@ -1,4 +1,4 @@
-package ua.opnu.springlab3.model;
+package ua.opnu.course_work1.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

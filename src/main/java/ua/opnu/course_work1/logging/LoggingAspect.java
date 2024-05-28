@@ -1,4 +1,4 @@
-package ua.opnu.springlab3.logging;
+package ua.opnu.course_work1.logging;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;

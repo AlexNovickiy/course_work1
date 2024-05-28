@@ -1,11 +1,12 @@
-package ua.opnu.springlab3.rest;
+package ua.opnu.course_work1.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import ua.opnu.springlab3.model.MembershipType;
-import ua.opnu.springlab3.service.MembershipTypeService;
+import ua.opnu.course_work1.model.MembershipType;
+import ua.opnu.course_work1.service.MembershipTypeService;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ public class MembershipTypeController {
     private MembershipTypeService membershipTypeService;
 
     @PostMapping
+    @PreAuthorize("hasRole('USER')")
     public ResponseEntity<MembershipType> addMembershipType(@RequestBody MembershipType membershipType) {
         MembershipType addedMembershipType = membershipTypeService.addMembershipType(membershipType);
         return new ResponseEntity<>(addedMembershipType, HttpStatus.CREATED);

@@ -1,9 +1,9 @@
-package ua.opnu.springlab3.repo;
+package ua.opnu.course_work1.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import ua.opnu.springlab3.model.MembershipType;
+import ua.opnu.course_work1.model.MembershipType;
 
 import java.util.List;
 

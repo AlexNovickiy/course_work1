@@ -1,6 +1,6 @@
 spring:
   application:
-    name: SpringLab3
+    name: CourseWork1
   jpa:
     database: POSTGRESQL
     show-sql: true

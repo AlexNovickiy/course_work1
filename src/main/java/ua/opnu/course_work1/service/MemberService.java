@@ -1,13 +1,13 @@
-package ua.opnu.springlab3.service;
+package ua.opnu.course_work1.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ua.opnu.springlab3.model.Member;
-import ua.opnu.springlab3.model.MembershipType;
-import ua.opnu.springlab3.model.Trainer;
-import ua.opnu.springlab3.repo.MemberRepository;
-import ua.opnu.springlab3.repo.MembershipTypeRepository;
-import ua.opnu.springlab3.repo.TrainerRepository;
+import ua.opnu.course_work1.model.Member;
+import ua.opnu.course_work1.model.MembershipType;
+import ua.opnu.course_work1.model.Trainer;
+import ua.opnu.course_work1.repo.MemberRepository;
+import ua.opnu.course_work1.repo.MembershipTypeRepository;
+import ua.opnu.course_work1.repo.TrainerRepository;
 
 import java.util.List;
 
